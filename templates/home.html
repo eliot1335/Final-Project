@@ -1,0 +1,29 @@
+{% extends "layout.html" %}
+{% block title %}Home{% endblock %}
+{% block head %}
+    {{ super() }}
+{% endblock %}
+{% block content %}
+    <div class ="row">
+        <div class="col-md-12 jumbotron text-center">
+            <h1>Welcome to Movie Visualizations</h1>
+            <!-- maybe we can use home page as the dashboard? -->
+            <p>temp message</p>
+        </div>
+    </div>
+    <div class="box">
+        <div class="container">
+            <div class="row" style="padding-bottom: 30px;">
+                <div class="col">
+                    <!-- <a href="/temp1"><img class="thumb" src="{{ url_for('static', filename='img/maps.png') }}"></a> -->
+                </div>
+                <div class="col">
+                    <!-- <a href="/temp2"><img class="thumb" src="{{ url_for('static', filename='img/scatter.png') }}"></a> -->
+                </div>
+                <div class="col">
+                    <!-- <a href="/temp3"><img class="thumb" src="{{ url_for('static', filename='img/cloud.png') }}"></a> -->
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}
