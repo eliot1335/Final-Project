@@ -103,7 +103,7 @@
                 <div class="row">
                     <div class="col-md-12 text-center">
                         <h2>Random Forest</h2>
-                        <p>Random Forest had a baseline accuracy of 0.3643 and after hyper-parameter tuning it is XXX. This is the best model out of the three and I spent more time doing analysis of it.</p>
+                        <p>Random Forest had a baseline accuracy of 0.3643 and after hyper-parameter tuning it is .3669. This is the best model out of the three and I spent more time doing analysis of it.</p>
                     </div>
                 </div>
             </div>
@@ -111,8 +111,29 @@
                 <div class="row">
                     <div class="col-md-12 text-center">
                         <img src="Images/RF_Tree.png" alt="Sean Random Forest Tree">
-                        <p>This picture illustrates the tree that is generated from the best model. It is 77 levels deep</p>
+                        <p>This picture illustrates the tree that is generated from the best model. It is 77 levels deep.</p>
                     </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4 text-center">
+                        <img src="Images/RF_FeatureSize.png" alt="Sean Random Forest Feature Size">
+                        <p>This is a regression of the feature size. In the baseline model there are 2028 features. We see we can reduce the feature size by half and not have a significant impact on the accuracy.</p>
+                    </div>
+                    <div class="col-md-4 text-center">
+                        <img src="Images/RF_SampleSize.png" alt="Sean Random Forest Sample Size">
+                        <p>This is a regression of the sample size. We see that the sample size is not affecting the accuracy.</p>
+                    </div>
+                    <div class="col-md-4 text-center">
+                        <img src="Images/RF_TreeSize.png" alt="Sean Random Forest Tree Size">
+                        <p>This is a regression of the tree size. We see even forcing the tree size to be 30 deep does not have a major effect on the accuracy.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 text-center"><p><br>br>br></p></div>
                 </div>
             </div>
         </div>
