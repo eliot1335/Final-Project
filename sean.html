@@ -58,14 +58,62 @@
         -->
         <div class ="row">
             <div class="col-md-12 jumbotron text-center">
-                <h1>Welcome to IMDB XXX Analysis Page</h1>
-                <!-- maybe we can use home page as the dashboard? -->
-                <p>These page illustrates...</p>
+                <h1>Welcome to IMDB Profitability Analysis Page</h1>
+                <p>These page illustrates the results from trying to predict the profitability of a movie based on the genre and the description.</p>
             </div>
         </div>
         <div class="box">
             <div class="container">
-            
+                <div class="row">
+                    <div class="col-md-12 text-center">
+                        <h2>Linear Regression</h2>
+                        <p>Linear Regression had a Training Data Accuracy of 0.9987 and a Testing Data Accuracy of 0.2820.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 text-center">
+                        <img src="Images/LR_ConfusionMatrix.png" alt="Sean Linear Regression confusion matrix">
+                        <p>This is a confusion matrix for the Linear Regression run. There should be a solid line running from the lower left to the upper right. This plot does not show this. This illustrates the data did not converge well.</p>
+                    </div>
+                    <div class="col-md-6 text-center">
+                        <img src="Images/LR_PenaltyConfig.png" alt="Sean Linear Regression penalty config">
+                        <p>This is the penalty regression for the Linear Regression run. It shows that a small penalty actually increases performance by about 5%. As the penalty approaches 1, we are back down to the original accuracy.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 text-center">
+                        <h2>Keras Neural Net</h2>
+                        <p>Keras Neural Net had a Training Data Accuracy of 0.9982 and a Testing Data Accuracy of 0.2673. I tried multiple iterations on the architecture to improve this score without avail. I believe there is something fundamental that I am missing.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 text-center">
+                        <img src="Images/NeuralNet1.png" alt="Sean Neural Net performance">
+                        <p>These are plots that illustrates the training and validation loss and accuracy. We can see the training data quickly goes to 100% accuracy and 0 loss. In contrast the validation data goes from 35% accuracy down to 27% accuracy as the training progresses. I could not find an answer to this </p>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 text-center">
+                        <h2>Random Forest</h2>
+                        <p>Random Forest had a baseline accuracy of 0.3643 and after hyper-parameter tuning it is XXX. This is the best model out of the three and I spent more time doing analysis of it.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 text-center">
+                        <img src="Images/RF_Tree.png" alt="Sean Random Forest Tree">
+                        <p>This picture illustrates the tree that is generated from the best model. It is 77 levels deep</p>
+                    </div>
+                </div>
             </div>
         </div>
 
