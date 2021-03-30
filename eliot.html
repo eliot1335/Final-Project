@@ -66,56 +66,75 @@
         <div class="box">
             <div class="container">
                 <div class="row">
-                    <div class="col-md-12 text-center">
+                    <div class="col-md-12 text-left">
                         <h2>Multi-Label Classification</h2>
-                        <p>Why do I chose movie genre tags as my output</p>
-                        <p>What is my blocker</p>
+                        <p><br></p>
+                        <p>My portion of the project is to build a model that takes the movie titles and descriptions as feature, and spit out the genre for that movie.</p>
+                        <p>The reason I am interested in doing this is that when I worked on project 2 with a similar movie dataset scrapped from IMDB, I had a hard time dealing with multiple genre tags given in the genre column. It same with no specific number of tags and no specific sequence between tags.</p>
                     </div>
                 </div>
             </div>
             <div class="container">
                 <div class="row">
                     <!-- gotta play around with the bootstrap -->
-                    <div class="col-md-6 text-center">
-                        <img src="testimg" alt="test">
-                        <img src=xxxxx alt="test">
-                        <p>will show two pictures of the genre and feature count</p>
+                    <div class="col-md-12 text-left">
+                        <img src="Images/screenshot_Eliot.jpg" alt="screenshot of IMDB page">
+                        <p>This had made plotting visualizations super difficult for me.</p>
+                        <br>
                     </div>
                 </div>
             </div>
             <div class="container">
                 <div class="row">
-                    <div class="col-md-6 text-center">
-                        <img src="testimg" alt="test">
-                        <p>will show a picture of movie genre complexcity</p>
+                    <div class="col-md-6 text-left">
+                        <p>In my model, I used TF-IDF function to vectorize my feature, which score each word based on how frequently it appear in the bag of words of movie titles and descriptions. </p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6 text-left">
+                        <img src="Images/genre_count_bar_Eliot.jpg" alt="test">
+                        <p>There are 21 tags in genre.</p>
+                    </div>
+                    <div class="col-md-6 text-left">
+                        <img src="Images/freq_word_bar_Eliot.jpg" alt="test">
+                        <p>This is a bar chart for the top 100 most frequent words in the bag of words.</p>
+                        <p><br></p>
                     </div>
                 </div>
             </div>
             <div class="container">
                 <div class="row">
-                    <div class="col-md-12 text-center">
+                    <div class="col-md-12 text-left">
                         <h2>Logistic Regression</h2>
-                        <p>Logistic Regression had a Lorem, ipsum dolor sit amet consectetur adipisicing elit. Pariatur, quisquam eaque dicta itaque nulla corporis illum et culpa odio ducimus laborum ut minus, provident nemo eveniet enim voluptate modi sequi..</p>
+                        <p><br></p>
+                        <p>With the help of MultiLabelBinarizer(), I was able to assign these tags to outcome in arrays of array with binary information, and fit the data to a logistic regression model in a one vs. all fashion. This can be seen as the foundation of a serviceable movie recommendation system.</p>
+                        <p>I adapted a function to sample the features and spit out the predicted genre and the actual genre of the movies.</p>
                     </div>
                 </div>
             </div>
             <div class="container">
                 <div class="row">
-                    <div class="col-md-6 text-center">
-                        <img src="Images/LR_MultiLabel_ConfusionMatrix_Eliot.jpg" alt="Eliot Multi-Label Logistic Regression confusion matrix">
-                        <p>Having so much trouble plotting confusion matrix. I adapted a code to display one confusion matrix for each genre tag.</p>
-                        <p>How to make sense of these plots</p>
+                    <div class="col-md-6 text-left">
+                        <img src="Images/Sample_display_Eliot.jpg" alt="predictions">
+                        <p><br></p>
                     </div>
                 </div>
             </div>
             <div class="container">
                 <div class="row">
-                    <div class="col-md-12 text-center">
-                        <h2>Random Forest</h2>
-                        <p>
-                            I want to talk about my random forest approach.
-                        </p>
+                    <div class="col-md-12 text-left">
+                        <h2>Evaluations of The Predictions</h2>
+                        <p><br></p>
+                        <p>The challenge of this is that many classification studies focus on single-labeled classification. Therefore, even though the result of my prediction doesn't seem to be good, I had a hard time figuring out how to fit this multi-labeled data into other models and create good visualizations.</p>
+                        <p><br>This is the classification report. The numbers aren't that great.</p>
+                        <img src="Images/classification_report_Eliot.jpg" alt="classification_report">
+                        <p><br></p>
+                        <p>This is a confusion matrix plot for each of the 21 labels</p>
+                        <img src="Images/LR_MultiLabel_ConfusionMatrix_Eliot.jpg" alt="classification_report">
                     </div>
+                </div>
+                <div class="row">
+                    <p><br></p>
                 </div>
             </div>
         </div>
