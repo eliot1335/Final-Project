@@ -58,14 +58,59 @@
         -->
         <div class ="row">
             <div class="col-md-12 jumbotron text-center">
-                <h1>Welcome to IMDB XXX Analysis Page</h1>
+                <h1>Welcome to IMDB Actor Analysis Page</h1>
                 <!-- maybe we can use home page as the dashboard? -->
-                <p>These page illustrates...</p>
+                <p>These page illustrates a films financial success using support vector machines based upon actors in a film and the actors world gross income</p>
             </div>
         </div>
         <div class="box">
             <div class="container">
-            
+                <div class="row">
+                    <div class="col-md-12 text-left">
+                        <h2>Overview</h2>
+                        <p><br></p>
+                        <p>I wanted to build a model that would take in the actors name, as well as the total world gross icnocme for the actor. It would then predict the total gross income of a movie the actor appeared in.</p>
+                        <p>I wanted to see if an actor does make a difference in the wolrd gross income of a film.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="box">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 text-center">
+                        <h2>Support Vector Machines</h2>
+                        <p>The training data accuracy and the test data accuracy were both significantly low. The accuracy of my training data was -0.096, and my test data -0.099  </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <!-- gotta play around with the bootstrap -->
+                <div class="col-md-12 text-left">
+                    <h3>Actor Affect on World Gross Income</h3>
+                    <img src="Actor_Income Plot.jpg" alt="test">
+                    <p>Many of the actors appear to have little affect on the world gross income. But there are a few that do appear to have an affect, there are outliers as well. The ouliers may show a small group of actors that do have a major affect on world gross income.</p>
+                </div>
+            </div>
+        </div> 
+        <div class="container">
+            <div class="row">
+                <!-- gotta play around with the bootstrap -->
+                <div class="col-md-12 text-left">
+                    <h4>R2 for my model</h4> 
+                    <p>The R2 for my model was significantly low at -0.0989, showing the data was a poor fit to the model. But this was much higher than my linear regression model and the logistics model.</p>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <!-- gotta play around with the bootstrap -->
+                <div class="col-md-12 text-left">
+                    <h5>Closuion</h5>
+                    <p> The data was a poor fit for all three models attempted. The Data may require more cleaning and transforming before training and testing.</p>
+                </div>
             </div>
         </div>
 
